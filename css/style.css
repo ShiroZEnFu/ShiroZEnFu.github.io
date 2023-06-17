@@ -89,6 +89,7 @@ div.down span.f {
     font-size: 1.8em;
     transition: 3s ease;
     color: #ffffff;
+    color: white;
 }
 
 div.down span.q {
@@ -104,11 +105,12 @@ div.down span.q {
     border-radius:  20px;
     text-align: center;
     transition: 3s ease;
+    color: white;
 }
 
 
 .button {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     position: relative;
     width: 300px;
     height: 50px;
@@ -117,10 +119,16 @@ div.down span.q {
     z-index: 11;
     border: 10px solid white;
     border-radius: 20px;
-    
+    color: white;
+
     font-size: 1.5em;
     cursor: pointer;
     transition: 3s ease;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-image: url(/1.jpg);
 
 }
 
