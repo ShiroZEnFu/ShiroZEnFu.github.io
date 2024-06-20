@@ -1,187 +1,98 @@
-html, body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    height: 100%;
-}
-* {
-    margin: 0;
+body, html {
+    width: 100%;
     padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+html::-webkit-scrollbar {
+    background: transparent;
+}
+
+*, *::after, *::before {
     box-sizing: border-box;
 }
+
+/* Fonts */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container {
-    background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 600px;
-    transition: 3s ease;
-}
-div.top-video {
-    position: relative;
-    background-color:   transparent;
-    width: 100%;
-    height: 300px;
-    margin-bottom: 20px;
-    z-index: 9;
-    border-radius: 20px;
-    transition: 3s ease;
-}
-.video {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px ;
-    transition: 3s ease;
-    background-blend-mode: multiply;
-    background-color: rgb(66, 4, 124);
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
-div.right-photo {
-    background-image: url(/photo_2023-06-11_17-36-34.jpg);
-    background-size: cover;
+header {
+    float: left;
+    width: 100%;
+    height: 75vh;
+}
+
+header .text {
+    position: relative;
+    top: auto;
+    left: 40%;
+}
+
+main {
+     float: left;
+     width: 100%;
+     height: 100vh;
+}
+footer {
+    float: left;
+    width: 100%;
+    height: 10px;   
+}
+
+.avatar img {
+    position: relative;
+    left: 25%;
+    top: 250px;
+
     width: 200px;
     height: 200px;
-    position: relative;
-    top: -120px;
-    left: -100px;
-    border-radius: 50%;
-    border: 20px solid white;
-    z-index: 10;
-    transition: 3s ease;
-    background-blend-mode: multiply;
-    background-color: rgba(193, 164, 221, 0.555);
+
+    border: 2px solid white;
 }
-div.down {
+.avatar p {
     position: relative;
-    background-color: rgb(48, 37, 63);
-    background-image: url(/image1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-color: rgb(66, 4, 124);
-    z-index: 9;
-    width: 100%;
-    height: 280px;
-    top: -200px;
-    border-radius: 20px;
+    left: 50%;
+    top: 250px;
+
+}
+
+.avatar {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    transition: 3s ease;
     
 }
-div.down p {
+
+.nick {
+    width: 6ch;
+    color: white;
+    font-family: monospace;
+    font-size: 50px;
+    white-space: nowrap; /* не переносить текст на другую строку */
+    overflow: hidden; /* скрываем переполнение контентом */
+    animation: printed_text 3s steps(6, end) forwards;
+  }
+
+  @keyframes printed_text{
+    from {
+      width: 0;
+    }
+  }
+
+.text {
+    width: 21ch;
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    white-space: nowrap; /* не переносить текст на другую строку */
+    overflow: hidden; /* скрываем переполнение контентом */
+    animation: printed_text 3s steps(21, end) forwards;
+    left: 40%;
+    top: -50px;
     position: relative;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 3s ease;
 }
-div.down span.f {
-    padding-bottom: 20px ;
-    width: 100px;
-    text-align: center;
-    font-size: 1.8em;
-    transition: 3s ease;
-    color: #ffffff;
-    color: white;
-}
-
-div.down span.q {
-    font-size: 1.2em;
-    color: #ffffff;
-    transition: 3s ease;
-}
-.button span {
-    box-shadow: 0 0 10px red;
-    width: 280px;
-    height: 30px;
-    display: block;
-    border-radius:  20px;
-    text-align: center;
-    transition: 3s ease;
-    color: white;
-}
-
-
-.button {
-    background-color: rgb(255, 0, 0);
-    position: relative;
-    width: 300px;
-    height: 50px;
-    top: -230px;
-    left: 100px;
-    z-index: 11;
-    border: 10px solid white;
-    border-radius: 20px;
-    color: white;
-
-    font-size: 1.5em;
-    cursor: pointer;
-    transition: 3s ease;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-image: url(/1.jpg);
-
-}
-
-.button:hover {
-    transform: translateY(20px);
-}
-@media (max-width: 701px) {
-    .container {
-        width: 250px;
-        height: 300px;
-    }
-    div.top-video {
-        width: 100%;
-        height: 150px;
-        margin-bottom: 110px;
-    }
-    .video {
-        width: 100%;
-        height: 150px;
-    }
-    div.right-photo{
-        position: relative;
-        width: 100px;
-        height: 100px;
-        top: -150px;
-        left: -50px;
-        border: 5px solid white;
-    }
-    div.down {
-        width: 100%;
-        height: 140px;
-    }
-    div.down span.f {
-        font-size: 0.9em;
-        padding-bottom: 10px;
-        width: 50px;
-    }
-    div.down span.q {
-        font-size: 0.6em;
-    }
-    .button span {
-        width: 130px;
-        height: 30px;
-
-
-    }
-    .button {
-        width: 150px;
-        height: 50px;
-        left: 50px;
-        top: -230px;
-    }
-    
-}
-
 
