@@ -23,7 +23,7 @@ body {
 header {
     float: left;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
 }
 
 
@@ -39,21 +39,28 @@ footer {
 }
 
 .avatar img {
-    position: relative;
-    left: 30%;
-    top: 250px;
-
     width: 200px;
     height: 200px;
 
     border: 2px solid white;
+    margin-right: 100px;
+
 }
 
+.topic {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
 
 .avatar {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
     
 }
 
@@ -66,9 +73,7 @@ footer {
     overflow: hidden; /* скрываем переполнение контентом */
     animation: printed_text 3s steps(6, end) forwards;
     position: relative;
-    left: 48%;
-    top: 200px;
-    display: block;
+    margin-left: 25%;
   }
 
   @keyframes printed_text{
@@ -86,9 +91,6 @@ footer {
     overflow: hidden; /* скрываем переполнение контентом */
     animation: printed_text 3s steps(21, end) forwards;
     position: relative;
-    left: 58%;
-    top: 150px;
-    margin-left: 50px;
 
 }
 
@@ -98,6 +100,7 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-items: center;
     }
     .text {
         width: 21ch;
@@ -107,10 +110,6 @@ footer {
         white-space: nowrap; /* не переносить текст на другую строку */
         overflow: hidden; /* скрываем переполнение контентом */
         animation: printed_text 3s steps(21, end) forwards;
-        position: relative;
-        left: 30%;
-        top: 150px;
-        margin-left: 0px;
     
     }
     .nick {
@@ -121,20 +120,15 @@ footer {
         white-space: nowrap; /* не переносить текст на другую строку */
         overflow: hidden; /* скрываем переполнение контентом */
         animation: printed_text 3s steps(6, end) forwards;
-        position: relative;
-        left: 0px;
-        top: 200px;
-        display: block;
       }
       .avatar img {
         position: relative;
-        left: 0px;
-        top: 250px;
     
         width: 200px;
         height: 200px;
     
         border: 2px solid white;
+        margin-right: 0px;
     }
 }
 
