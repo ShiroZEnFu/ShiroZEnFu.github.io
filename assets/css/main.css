@@ -73,7 +73,7 @@ footer {
     overflow: hidden; /* скрываем переполнение контентом */
     animation: printed_text 3s steps(6, end) forwards;
     position: relative;
-    margin-left: 25%;
+    margin-left: 21%;
   }
 
   @keyframes printed_text{
