@@ -40,7 +40,7 @@ footer {
 
 .avatar img {
     position: relative;
-    left: 35%;
+    left: 30%;
     top: 250px;
 
     width: 200px;
@@ -48,12 +48,7 @@ footer {
 
     border: 2px solid white;
 }
-.avatar p {
-    position: relative;
-    left: 40%;
-    top: 200px;
 
-}
 
 .avatar {
     display: flex;
@@ -70,6 +65,10 @@ footer {
     white-space: nowrap; /* не переносить текст на другую строку */
     overflow: hidden; /* скрываем переполнение контентом */
     animation: printed_text 3s steps(6, end) forwards;
+    position: relative;
+    left: 48%;
+    top: 200px;
+    display: block;
   }
 
   @keyframes printed_text{
@@ -87,8 +86,55 @@ footer {
     overflow: hidden; /* скрываем переполнение контентом */
     animation: printed_text 3s steps(21, end) forwards;
     position: relative;
-    left: 48%;
+    left: 58%;
     top: 150px;
+    margin-left: 50px;
 
+}
+
+
+@media (width < 720px) {
+    .avatar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text {
+        width: 21ch;
+        color: white;
+        font-family: monospace;
+        font-size: 25px;
+        white-space: nowrap; /* не переносить текст на другую строку */
+        overflow: hidden; /* скрываем переполнение контентом */
+        animation: printed_text 3s steps(21, end) forwards;
+        position: relative;
+        left: 30%;
+        top: 150px;
+        margin-left: 0px;
+    
+    }
+    .nick {
+        width: 6ch;
+        color: white;
+        font-family: monospace;
+        font-size: 50px;
+        white-space: nowrap; /* не переносить текст на другую строку */
+        overflow: hidden; /* скрываем переполнение контентом */
+        animation: printed_text 3s steps(6, end) forwards;
+        position: relative;
+        left: 0px;
+        top: 200px;
+        display: block;
+      }
+      .avatar img {
+        position: relative;
+        left: 0px;
+        top: 250px;
+    
+        width: 200px;
+        height: 200px;
+    
+        border: 2px solid white;
+    }
 }
 
