@@ -1,0 +1,94 @@
+body, html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+html::-webkit-scrollbar {
+    background: transparent;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    float: left;
+    width: 100%;
+    height: 75vh;
+}
+
+
+main {
+     float: left;
+     width: 100%;
+     height: 100vh;
+}
+footer {
+    float: left;
+    width: 100%;
+    height: 10px;   
+}
+
+.avatar img {
+    position: relative;
+    left: 35%;
+    top: 250px;
+
+    width: 200px;
+    height: 200px;
+
+    border: 2px solid white;
+}
+.avatar p {
+    position: relative;
+    left: 40%;
+    top: 200px;
+
+}
+
+.avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.nick {
+    width: 6ch;
+    color: white;
+    font-family: monospace;
+    font-size: 50px;
+    white-space: nowrap; /* не переносить текст на другую строку */
+    overflow: hidden; /* скрываем переполнение контентом */
+    animation: printed_text 3s steps(6, end) forwards;
+  }
+
+  @keyframes printed_text{
+    from {
+      width: 0;
+    }
+  }
+
+.text {
+    width: 21ch;
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    white-space: nowrap; /* не переносить текст на другую строку */
+    overflow: hidden; /* скрываем переполнение контентом */
+    animation: printed_text 3s steps(21, end) forwards;
+    position: relative;
+    left: 48%;
+    top: 150px;
+
+}
+
