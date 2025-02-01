@@ -60,8 +60,8 @@ function Section({ children, className = '' }: { children: React.ReactNode; clas
 }
 
 function App() {
-  const name = useTypewriter("Hi, I'm Sarah Parker");
-  const role = useTypewriter("Systems Developer", 100);
+  const name = useTypewriter("I'm Sariin");
+  const role = useTypewriter("  Cpp Developer", 100);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -79,11 +79,11 @@ function App() {
 
   const skills = ['C++', 'Discord Bots', 'Telegram Bots', 'System Applications', 'Git', 'Rust'];
   const socialLinks = [
-    { name: 'GitHub', icon: <Github className="w-6 h-6" />, url: 'https://github.com' },
-    { name: 'Telegram', icon: <MessageCircle className="w-6 h-6" />, url: 'https://t.me' },
-    { name: 'Discord', icon: <MessagesSquare className="w-6 h-6" />, url: 'https://discord.com' },
+    { name: 'GitHub', icon: <Github className="w-6 h-6" />, url: 'https://github.com/ShiroZEnFu' },
+    { name: 'Telegram', icon: <MessageCircle className="w-6 h-6" />, url: 'https://t.me/ElviDem' },
+    { name: 'Discord', icon: <MessagesSquare className="w-6 h-6" />, url: 'https://discord.gg/Aeau7thuCs' },
     { name: 'Instagram', icon: <Instagram className="w-6 h-6" />, url: 'https://instagram.com' },
-    { name: 'Steam', icon: <GameController2 className="w-6 h-6" />, url: 'https://steamcommunity.com' },
+    { name: 'Steam', icon: <GameController2 className="w-6 h-6" />, url: 'https://steamcommunity.com/id/hitocki/' },
   ];
 
   const projects = [
@@ -115,7 +115,7 @@ function App() {
           <div className="md:w-1/3">
             <div className="relative group">
               <img
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400&h=400"
+                src="https://i.pinimg.com/736x/66/03/41/66034108544535c1dc51787c68a1a0e5.jpg"
                 alt="Profile"
                 className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-blue-600/80 transition-transform duration-300 group-hover:scale-105"
               />
