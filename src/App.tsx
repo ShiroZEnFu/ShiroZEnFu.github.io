@@ -207,7 +207,7 @@ function App() {
       </main>
 
       <footer className="bg-[#1a1a1a] mt-32 py-8 text-center text-gray-400 border-t border-gray-800">
-        <p>© 2024 Sarah Parker. All rights reserved.</p>
+        <p>© 2024 Sariin. All rights reserved.</p>
       </footer>
     </div>
   );
