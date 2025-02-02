@@ -10,9 +10,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <script type="module" src="./src/main.tsx"></script>
+    <style>
+      #typing-container {
+          font-family: monospace;
+          font-size: 24px;
+          white-space: pre-wrap;
+      }
+      
+      /* Blinking cursor animation */
+      .typing-cursor {
+          display: inline-block;
+          width: 3px;
+          background-color: black;
+          margin-left: 2px;
+          animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+      }
+  </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><div id="typing-container"></div></div>
+    
     <script type="module" src="./src/main.tsx"></script>
+    
+    <script>
+      function typeText(elementId, text, speed = 50, callback = null) {
+          const container = document.getElementById(elementId);
+          let index = 0;
+          let cursor = document.createElement('span');
+          cursor.className = 'typing-cursor';
+          container.innerHTML = '';
+          container.appendChild(cursor);
+
+          function type() {
+              if (index < text.length) {
+                  container.insertBefore(
+                      document.createTextNode(text[index]),
+                      cursor
+                  );
+                  index++;
+                  setTimeout(type, speed);
+              } else {
+                  container.removeChild(cursor);
+                  if (callback) callback();
+              }
+          }
+
+          // Initial delay before typing starts
+          setTimeout(type, 500);
+      }
+
+      // Usage example
+      document.addEventListener('DOMContentLoaded', () => {
+          const text = "Hello, i'm Sariin!\nMy real name is Dima\n19 years old\nI'm a C++ Developer.\nEnjoy my website!";
+          typeText('typing-container', text, 50, () => {
+              console.log('Animation complete!');
+          });
+      });
+  </script>
   </body>
 </html>

@@ -60,8 +60,8 @@ function Section({ children, className = '' }: { children: React.ReactNode; clas
 }
 
 function App() {
-  const name = useTypewriter("I'm Sariin");
-  const role = useTypewriter("  Cpp Developer", 100);
+  const name = useTypewriter("");
+  const role = useTypewriter("", 100);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
