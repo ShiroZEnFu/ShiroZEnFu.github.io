@@ -124,9 +124,9 @@ function App() {
           </div>
           <div className="md:w-2/3 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
-              {name}
+              Sariin
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400">{role}</p>
+            <p className="text-xl md:text-2xl text-gray-400">Cpp Developer</p>
           </div>
         </div>
       </header>
