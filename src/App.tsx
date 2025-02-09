@@ -82,7 +82,7 @@ function App() {
     { name: 'GitHub', icon: <Github className="w-6 h-6" />, url: 'https://github.com/ShiroZEnFu' },
     { name: 'Telegram', icon: <MessageCircle className="w-6 h-6" />, url: 'https://t.me/ElviDem' },
     { name: 'Discord', icon: <MessagesSquare className="w-6 h-6" />, url: 'https://discord.gg/SpnCpRdReZ' },
-    { name: 'Instagram', icon: <Instagram className="w-6 h-6" />, url: 'https://instagram.com' },
+    { name: 'Instagram', icon: <Instagram className="w-6 h-6" />, url: 'https://www.instagram.com/shirozniy/' },
     { name: 'Steam', icon: <GameController2 className="w-6 h-6" />, url: 'https://steamcommunity.com/id/hitocki/' },
   ];
 
