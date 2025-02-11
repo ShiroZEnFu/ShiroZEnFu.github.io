@@ -81,7 +81,7 @@ function App() {
   const socialLinks = [
     { name: 'GitHub', icon: <Github className="w-6 h-6" />, url: 'https://github.com/ShiroZEnFu' },
     { name: 'Telegram', icon: <MessageCircle className="w-6 h-6" />, url: 'https://t.me/ElviDem' },
-    { name: 'Snake', icon: <Snake className="w-6 h-6" />, url: 'snake.html' },
+    { name: 'Snake', url: 'snake.html' },
     { name: 'Instagram', icon: <Instagram className="w-6 h-6" />, url: 'https://www.instagram.com/shirozniy/' },
     { name: 'Steam', icon: <GameController2 className="w-6 h-6" />, url: 'https://steamcommunity.com/id/hitocki/' },
   ];
